@@ -1,0 +1,173 @@
+*{
+    text-align: center;
+}  
+body{
+    display: flex;
+    animation-name: backcol;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-image: url('img/book.png');
+    background-blend-mode:color-burn;
+    background-size: 50px;
+}
+#bod2{
+    margin: 0 auto;
+    position: relative;
+    display:grid;
+    grid-template:
+        "head" 60px
+        "firediv" 50px
+        "tabela" 300px
+        "wpis" 150px
+        "tabelaalfabet" auto
+        /220px;
+  
+}
+header{
+    grid-area: head;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: inset;
+    background-image: linear-gradient(to bottom, greenyellow, yellow );
+    padding-top:5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+    .obracajacy-tekst {
+        font-size: 40px;
+        display: inline-block;
+        animation: headr 1s infinite, headr2 2s infinite;
+
+    }
+
+
+@keyframes headr {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.5)}
+    100% {transform: scale(1)}
+  }
+  @keyframes headr2 {
+    0% {transform: rotateZ(2deg)}
+    50% {transform: rotateZ(-2deg)}
+    100% {transform: rotateZ(2deg)}
+  }
+@keyframes example {
+    0% {transform: rotateY(0deg)}
+    50% {transform: rotateY(90deg)}
+    100% {transform: rotateY(0deg)}
+  }
+@keyframes backcol{
+    0% {background-color: rgb(120, 255, 50);background-position-x:0;background-position-y:0;}
+    50% {background-color: rgb(200, 255, 50);background-position-x:50px;background-position-y:25px;}
+    100% {background-color: rgb(120, 255, 50);background-position-x:100px;background-position-y:50px;} 
+}
+@keyframes animlabel{
+    0% {background-color: rgb(120, 255, 50);}
+    50% {background-color: rgb(200, 255, 50);}
+    100% {background-color: rgb(120, 255, 50);}
+}
+.button{
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size:20px;
+    
+    cursor: pointer;
+
+}
+.button:hover{
+    background-color: rgb(0, 200, 200);
+}
+#zgaduj,#diffchange,#wordchange{
+    transition-duration: 0s;
+    box-shadow: 0 3px #999;
+}
+#zgaduj:active,#diffchange:active,#wordchange:active{
+    background-color: rgb(0, 200, 200);
+    box-shadow: 0 0px #999;
+    transform: translateY(4px);
+}
+#animlabel{
+    font-size: 50px;
+}
+#wpis{
+    grid-area: wpis;
+
+}
+#sss{
+    grid-area: sss;
+
+}
+#opis{
+    font-size:30px;
+    font-family: 'Lucida Console'
+}
+#diffchange{
+    position: absolute;   
+    top: 5px;            
+    left: 1%; 
+    font-size: 20px;
+    padding: 10px;
+}
+#wordchange{
+    position: absolute;   
+    top: 60px;            
+    left: 1%; 
+    font-size: 20px;
+    padding: 10px;
+}
+#firediv{ 
+    display:flex; 
+
+    
+}
+#firetxt{
+    margin-left: 25px;
+}
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+  }
+#menu{
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top: -150px;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 10px;
+    font-family: 'Lucida Console';
+    font-size:30px;
+    
+}
+
+@keyframes backcolextr{
+    0% {background-color: rgb(255, 60, 50);background-position-x:0;background-position-y:0;}
+    50% {background-color: rgb(255, 139, 50);background-position-x:50px;background-position-y:25px;}
+    100% {background-color: rgb(255, 60, 50);background-position-x:100px;background-position-y:50px;} 
+}
+
+#AA{
+    margin-left: 20px;
+}
+#ZZ{
+    margin-left: 40px;
+}
+#ĄĄ{
+    margin-left: 20px;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Słowordl</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skrypty.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</head>
+<body id="body">
+    <div id="bod2">
+    <header id="header"><span class="obracajacy-tekst" id="ob-tekst">Słowordle</span></header>
+    <div id="firediv"></div>
+    <div id="tabela">
+        <label id="opis"></label><br>
+        
+    </div>
+    <div id="wpis">
+        <label id="animlabel"></label><br>
+        <input type="text" maxlength="5" name="slowoja" id="slowoja">
+        <form>
+            <button class="button" type="button" id="zgaduj">Zgaduj</button>
+        </form>
+    </div>
+    
+    </div> 
+    <button class="button" type="button" id="diffchange">Zmien tryb</button> 
+    <button class="button" type="button" id="wordchange">Zmien słowo</button> 
+    <div id="background"></div>
+    <div id="menu">
+        <label id="menulabel">Wygrana! Czy chcesz wylosować słowo przy kolejnej grze?</label>
+        <form>
+            <button class="button" type="button" id="restartnie">Nie</button>
+            <button class="button" type="button" id="restarttak">Tak</button>
+        </form>
+    </div>
+    <div id="tabelaalfabet">
+    </div>
+</body>
+</html>
